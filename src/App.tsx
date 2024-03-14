@@ -37,7 +37,7 @@ function App() {
     const lastNumber = expression.split(/[-+/*]/g).pop();
     if (!lastNumber) return;  
     console.log("lastNumber :>> ", lastNumber);
-    
+
     // if last number already has a decimal, don't add another
       if (lastNumber?.includes(".")) return;
       setExpression(expression + symbol);
@@ -68,7 +68,7 @@ function App() {
           k--;
           j++;
         }
-        i +=j
+        i -=j
       } else {
         newParts.unshift(parts[i]);
       }
