@@ -14,7 +14,7 @@ function App() {
 
   const buttonPress = (symbol : string) => {
     if (symbol === "clear") {
-      setAnswer("0");
+      setAnswer("");
       setExpression("0");
     } else if (symbol === "negative") {
       if (answer === "") return;
